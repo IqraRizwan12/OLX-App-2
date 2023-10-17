@@ -27,8 +27,8 @@ function Dashboard() {
         <div>
             
             {loading ? <center><img src="https://i.gifer.com/ZKZg.gif" width='20'/></center>:ads.map(item=>{
-                return <div style={{ display: "inline-block", width: '23%', border: '1px solid black', margin: '10px', height: '100%', padding: '5px' }}onClick={()=>navigate('/postad/'+item.id)}>
-                    <img style={{ borderBottom: '1px solid black' }} height={'300'} width={'100%'} src={item.imageUrl}/>
+                return <div style={{ display: "inline-block", width: '22%', border: '1px solid black', margin: '10px', height: '100%', padding: '5px' }}onClick={()=>navigate('/postad/'+item.id)}>
+                    <img style={{ borderBottom: '1px solid black' }} height={'250'} width={'100%'} src={item.imageUrl}/>
                     <h4>{item.title}</h4>
                     <h4>Rs.{item.price}</h4>
                      </div>
